@@ -1,0 +1,17 @@
+{
+  "name": "randommtastop",
+  "version": "1.0.0",
+  "description": "Generating random NYC subway stop and go",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aziz Ramos",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "express": "^4.18.3",
+    "gtfs-realtime-bindings": "^1.1.1",
+    "protobufjs": "^7.2.6"
+  }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Random Subway Stop</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+      <link rel="manifest" href="/manifest.json">
+  </head>
+  <body>
+      <section class="container">
+        <img class="logo" src="rss-logo-full.png" alt="Random Subway Stop"/>
+        <p>Explore NYC like you've never done before</p>
+        <button onclick="generateRandomName()" class="generator-button">Go!</button>
+        <div id="randomName" class="stop-container"></div>
+      </section>
+
+      <script>
+        function generateRandomName() {
+          fetch('/randomName')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('randomName').innerHTML = `<a href="https://www.google.com/maps/search/?api=1&query=${data}" target="_blank">${data}</a>`;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+          }
+      </script>
+  </body>
+</html>

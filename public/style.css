@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #222;
+  color: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 480px;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.logo {
+  width: 100%;
+  max-width: 320px;
+}
+
+p {
+  font-weight: 300;
+  color: #666;
+}
+
+.generator-button {
+  background-color: #00933C;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  height: 64px;
+  width: 64px;
+  border-radius: 999em;
+  border: none;
+  margin: 1.2rem;
+}
+
+.stop-container a {
+  color: white;
+  font-size: 22px;
+}
