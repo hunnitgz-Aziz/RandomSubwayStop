@@ -23,21 +23,23 @@ h1 {
 
 .logo {
   width: 100%;
-  max-width: 320px;
+  max-width: 350px;
 }
 
 p {
   font-weight: 300;
   color: #666;
+  font-size: 18px;
 }
 
 .generator-button {
   background-color: #00933C;
   cursor: pointer;
   font-weight: bold;
+  font-size: 24px;
   color: white;
-  height: 64px;
-  width: 64px;
+  height: 108px;
+  width: 108px;
   border-radius: 999em;
   border: none;
   margin: 1.2rem;
