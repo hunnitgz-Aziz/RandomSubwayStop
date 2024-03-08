@@ -1,4 +1,4 @@
-import mapData from './subway-stops';
+import mapData from './subway-stops.js';
 
 // Function to generate random name
 function generateRandomName() {
@@ -13,11 +13,5 @@ document.getElementById('randomNameButton').addEventListener('click', function()
   const randomNameElement = document.getElementById('randomName');
   randomNameElement.textContent = randomName;
 
-  const googleMapsLink = document.createElement('a');
-  googleMapsLink.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(randomName)}`;
-  googleMapsLink.textContent = 'Open in Google Maps';
-  googleMapsLink.target = '_blank';
-
-  randomNameElement.appendChild(document.createElement('br'));
-  randomNameElement.appendChild(googleMapsLink);
+  document.getElementById('randomName').innerHTML = `<a href="https://www.google.com/maps/search/?api=1&query=${randomName}" target="_blank">${randomName}</a>`;
 });
