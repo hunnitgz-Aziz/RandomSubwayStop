@@ -12,21 +12,10 @@
       <section class="container">
         <img class="logo" src="rss-logo-full.png" alt="Random Subway Stop"/>
         <p>Explore NYC like you've never done before</p>
-        <button onclick="generateRandomName()" class="generator-button">Go!</button>
+        <button id="random" class="generator-button">Go!</button>
         <div id="randomName" class="stop-container"></div>
       </section>
 
-      <script>
-        function generateRandomName() {
-          fetch('/randomName')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('randomName').innerHTML = `<a href="https://www.google.com/maps/search/?api=1&query=${data}" target="_blank">${data}</a>`;
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
-          }
-      </script>
+      <script type="module" src="script.js"></script>
   </body>
 </html>

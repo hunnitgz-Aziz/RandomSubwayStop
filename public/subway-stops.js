@@ -1,4 +1,4 @@
-{
+const mapData = {
     "00ac": {
         "id": "00ac",
         "location": [
@@ -6554,3 +6554,5 @@
         }
     }
 }
+
+export default mapData
